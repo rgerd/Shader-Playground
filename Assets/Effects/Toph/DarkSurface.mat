@@ -7,8 +7,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Material
-  m_Shader: {fileID: 4800000, guid: 9757a8cb5f0614fb9ae6d7ab0ffa3d4a, type: 3}
+  m_Name: DarkSurface
+  m_Shader: {fileID: 4800000, guid: 5ee868c89c5c142e3ac687495d7bce08, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -35,10 +35,6 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
-    - _DispTex:
-        m_Texture: {fileID: 2800000, guid: bd6a421af62a74874804a917361c1089, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
     - _EmissionMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -51,10 +47,6 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
-    - _NoiseTex:
-        m_Texture: {fileID: 2800000, guid: bd6a421af62a74874804a917361c1089, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
     - _OcclusionMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -63,25 +55,54 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _WaveData:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _WaveDists:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _WaveOrigins:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     m_Floats:
+    - _BandFade: 0.769
+    - _BandSize: 0.1
     - _BumpScale: 1
+    - _CircleSpacing: 0.5
     - _Cutoff: 0.5
-    - _CutoffThresh: 0.729
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
     - _GlossMapScale: 1
     - _Glossiness: 0.5
     - _GlossyReflections: 1
-    - _LineThickness: 0.068
+    - _GlowBrightness: 29
+    - _GlowRadius: 8
+    - _GlowSustain: 15
+    - _MaxSceneDist: 50000
+    - _MaxWaveDist: 100
+    - _MaxWaveIndex: 1
+    - _MaxWaves: 2
     - _Metallic: 0
     - _Mode: 0
+    - _NumCircles: 8
+    - _NumWaves: 6
     - _OcclusionStrength: 1
     - _Parallax: 0.02
+    - _SearchX: 0.206
+    - _SearchY: 0
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1
     - _UVSec: 0
+    - _UseManhattan: 0
+    - _WaveDist: 0.72
+    - _WaveTexSide: 4
+    - _WaveTexSideLen: 16
     - _ZWrite: 1
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+    - _WaveOrigin: {r: 0, g: 0, b: 0, a: 0}
